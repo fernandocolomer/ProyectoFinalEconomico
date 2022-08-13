@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F8F8"
+    tools:context=".ActivityRegistro">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@drawable/fondo0"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imgvSalir"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_action_name"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:text="Registros"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="@drawable/logo_e_verde"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="arial"
+                android:text="Nombre"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:elevation="1dp"
+                android:ems="10"
+                android:fontFamily="arial"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@color/app_init"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="arial"
+                android:text="Apellido"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtapeliido"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:elevation="1dp"
+                android:fontFamily="arial"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/black"
+                android:textCursorDrawable="@color/app_init"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="arial"
+                android:text="Correo Electronico"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtcorreo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:elevation="1dp"
+                android:fontFamily="arial"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="arial"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtpass"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:elevation="1dp"
+                android:fontFamily="arial"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="arial"
+                android:text="Telefono"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txttelefono"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:elevation="1dp"
+                android:ems="10"
+                android:fontFamily="arial"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="arial"
+                android:text="Direccion"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:elevation="1dp"
+                android:fontFamily="arial"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/black"
+                android:textCursorDrawable="@color/app_init"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="#40A72E"
+                android:fontFamily="arial"
+                android:text="Registrarse"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

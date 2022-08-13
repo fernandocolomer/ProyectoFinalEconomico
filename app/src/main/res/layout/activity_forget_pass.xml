@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityForgetPass"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_blanco">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/fondo0"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imgvSalir"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_action_name"
+            android:gravity="center"
+            android:onClick="onClickRegresar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="arial"
+            android:gravity="center"
+            android:text="Restablecer Contraseña"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/modal"
+        android:background="@color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="400dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ingrese su correo electrónico"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:fontFamily="@font/rubik_regular"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txtcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/app_init"
+            android:ems="10"
+            android:fontFamily="@font/rubik_regular"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorLink="@color/app_init"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Enviar"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
+    </LinearLayout>
+
+</LinearLayout>

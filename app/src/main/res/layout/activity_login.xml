@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    android:orientation="vertical"
+    tools:context=".ActivityLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="160dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/login"
+            android:textColor="@color/app_init"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="arial"
+            android:text="@string/correo_electronico"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtLCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/app_init"
+            android:ems="10"
+            android:fontFamily="arial"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="arial"
+            android:text="@string/password"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/txtLClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/app_init"
+            android:ems="10"
+            android:fontFamily="arial"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:password="true"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="Deprecated,LabelFor,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txtforget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="arial"
+            android:singleLine="false"
+            android:text="@string/forgetpass"
+            android:textAllCaps="false"
+            android:textColor="#40A72E"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btnLIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="arial"
+            android:text="Iniciar sesion"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="arial"
+                android:text="No tienes cuenta"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtLRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="arial"
+                android:singleLine="false"
+                android:text="Registrarse"
+                android:textAllCaps="false"
+                android:textColor="#40A72E"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
